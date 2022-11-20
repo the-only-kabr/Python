@@ -1,0 +1,5 @@
+ax=int(input('Input coordinate point a (x) = '))
+ay=int(input('Input coordinate point a (y) = '))
+bx=int(input('Input coordinate point b (x) = '))
+by=int(input('Input coordinate point b (y) = '))
+print(f'Distance between a and b = {((ax-bx)**2+(ay-by)**2)**0.5}')
