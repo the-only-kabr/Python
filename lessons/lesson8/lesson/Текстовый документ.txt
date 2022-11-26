@@ -1,0 +1,48 @@
+'''aa = int(input("Enter your number : "))
+bb = int(input("Enter your number : "))
+print( aa + bb)
+print( aa - bb)
+print( aa / bb )
+print( aa % bb)
+print( aa ** 10 + bb ** 10)
+
+animals = ["Дракон","Змея","Лошадь","Овца","Обезьяна","Петух","Собака","Свинья","Крыса",
+        "Бык","Тигр","Заяц"]
+
+def FindAnumal(_n):
+    i = (_n - 2000) % 12
+    if i < 0:
+        i = 12 - i +1
+    print(animals[i])
+    
+a = int(input("ведите год : "))
+FindAnumal(a)
+# Напишите программу, которая принимает на вход число N и выдаёт последовательность из N членов.
+n = int(input('Введите число : '))
+for i in range(n+1):
+    print(i)
+    
+2. Для натурального n создать словарь индекс-значение, состоящий из элементов последовательности 3n + 1.
+    
+*Пример:*
+    
+    - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}
+n = int(input('Введите : '))
+d = {}
+print(type(d))
+for i in range(1, n+1):
+    d[str(i)] = 3 * i + 1
+
+print(d)'''
+'''3. Напишите программу, в которой пользователь будет задавать две строки, а программа - определять количество вхождений одной строки в другой.'''
+s1 = input()
+s2 = input()
+
+start = 0
+end = len(s1)
+count = 0
+while s1.find(s2,start,end) != -1:
+    start = s1.find(s2,start,end) + len(s2)
+    count += 1
+print(count)
+    
