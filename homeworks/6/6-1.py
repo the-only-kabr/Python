@@ -1,7 +1,7 @@
-#Задайте последовательность чисел. Напишите программу, которая выведет\
-# список неповторяющихся элементов исходной последовательности.
+#Обратный RLE
+import re
 
-s=input()
-num=[i for i in s.split(' ')]
-nums=list(set(num))
-print(nums)
+strng = input()
+
+out = re.sub('(\w)(\d+)', lambda x: x[1]*int(x[2]), strng)
+print(out)
